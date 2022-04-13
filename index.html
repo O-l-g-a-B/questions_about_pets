@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+</head>
+
+<body>
+    <form>
+        <h1>
+            <span"><b>Страница-опросник</b></span>
+        </h1><br />
+        <div>
+            <label for="name">Кличка питомца*</label>
+            <input type="text" id="name" required />
+        </div>
+        <div>
+            <label for="fio">ФИО владельца*</label>
+            <input type="text" id="fio" required />
+        </div>
+        <div>
+            <label for="tel">Контактный телефон в формате +х (ххх) ххх-хх-хх *<br></label>
+            <input type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" />
+        </div>
+        <div>
+            <label for="email">Электронная почта*</label>
+            <input type="email" id="email" required />
+        </div>
+        <div>
+            Порода питомца
+            <select>
+                <option value="1">Мейн-кун</option>
+                <option value="2">Шотландская вислоухая кошка</option>
+                <option value="3">Британская короткошерстная</option>
+                <option value="4">Бенгальская кошка</option>
+                <option value="5">Абиссинская кошка</option>
+                <option value="6">Ориентальная кошка</option>
+                <option value="7">Сибирская кошка</option>
+            </select>
+        </div>
+        <div>
+            Чем питается<br />
+            <input type="checkbox" name="option1" />сухой корм <br />
+            <input type="checkbox" name="option2" />влажный корм <br />
+            <input type="checkbox" name="option3" />натуральный корм
+        </div>
+        <div>
+            Пол<br />
+            самец<input type="radio" name="sex" /><br />
+            самка<input type="radio" name="sex" />
+        </div>
+        <div>
+            <label for="comments">Комментарий владельца:*</label><br />
+            <textarea name="comments" id="comments" rows="5" cols="40" required></textarea></div>
+        <div>
+            Приложите фото питомца<br />
+            <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+        </div><br />
+
+        <div><button>Сохранить</button></div>
+    </form>
+</body>
+
+</html>

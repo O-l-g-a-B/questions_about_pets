@@ -1,0 +1,18 @@
+h1 {
+color:rgb(92, 76, 70);
+}
+
+input:required:valid {
+    border-color: green;
+}
+
+form {
+    background-image: url(/styles/images/cat.jpg);
+    background-size: cover;
+    width: 100%;
+    font-size: white;
+}
+
+button {
+    background-color: rgb(207, 186, 226);
+}
