@@ -10,7 +10,7 @@ form {
     background-image: url(/styles/images/cat.jpg);
     background-size: cover;
     width: 100%;
-    font-size: white;
+    color: white;
 }
 
 button {
