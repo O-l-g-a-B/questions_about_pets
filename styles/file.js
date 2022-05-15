@@ -72,6 +72,21 @@ function retrieveFormValue(event) {
             break;
     }
     let cat1 = new Cat(name1, fio1, tel1, email1, breed1, food1, sex1, comment1, file1);
-    console.log(cat1);
 }
 form.addEventListener('submit', retrieveFormValue);
+
+postButton.onclick = function (e) {
+    e.preventDefault();
+    fetch("https://httpbin.org/post", {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'
+            },
+        })
+        .then(response => response.json())
+        .then(user => {
+            console.log(user);
+        })
+        .catch(error => console.log(error));
+}
