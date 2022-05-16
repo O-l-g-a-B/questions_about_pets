@@ -90,3 +90,7 @@ postButton.onclick = function (e) {
         })
         .catch(error => console.log(error));
 }
+
+function deliteAll() {
+    document.getElementById('form').reset();
+}
